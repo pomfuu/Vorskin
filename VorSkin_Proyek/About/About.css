@@ -1,0 +1,311 @@
+/*general*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('http://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Quicksand';
+  color: #ffffff;
+}
+
+/*navbar*/
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+}
+
+.navbar-container{
+  width: 100%;
+  background-color: #000000;
+}
+
+#header-up{
+  border-bottom: 0.5px solid rgba(255, 252, 252, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vw;
+  padding-bottom:1vw;
+}
+
+/*title vorskin*/
+#header-up #vorskin{
+  font-family: 'Avenir Next LT Pro';
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vw;
+  margin-left: 45%;
+} 
+
+/*link login dan subscribe*/
+#header-up #account{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+}
+
+#header-up #account li{
+  display: inline-block;
+  padding: 0 0.8vw;
+  list-style: none;
+  margin: 2vh;
+}
+
+#header-up #account li a{
+  text-decoration: none;
+  color:#ffffff;
+  transition: 0.3s ease;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4vw;
+  transition: 0.3 ease;
+}
+
+#header-up #account li a:hover {
+  color: #76A2CB;
+}
+
+nav #navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  list-style: none;
+}
+
+nav #navbar li{
+  display: inline-block;
+  padding: 0 1vw;
+  list-style: none;
+  margin: 2vh;
+}
+
+nav #navbar li a{
+  text-decoration: none;
+  color:#ffffff;
+  transition: 0.3s ease;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4vw;
+}
+
+nav #navbar li a:hover {
+  color: #76A2CB;
+  transition: 0.3 ease;
+}
+
+nav #navbar a.active{
+  color: #76A2CB;
+  transition: 0.3 ease;
+}
+
+/*content about*/
+body{
+  background: linear-gradient(rgba(53, 51, 51, 0.7), rgba(53, 51, 51, 0.7)), url('../Images/about_background.png');;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.about h1{
+    color: #ffffff;
+    letter-spacing: 0.15vw;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-align: right;
+    margin-bottom: 10vh;
+}
+
+/* tulisan in general content */
+.content h3{
+  font-size: 3vw;
+  font-family: 'Montserrat';
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.content p{
+  font-size: 1.5vw;
+  font-family: 'Quicksand';
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+/*jarak dan ukuran keseluruhan content*/
+.content{
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  margin: auto;
+  width: 70%;
+}
+
+/*kasih jarak per bagian*/
+.part{
+  margin-bottom: 8vh;
+}
+
+/*align text vertically*/
+.text-container{
+  padding-top: 10vh;
+}
+
+/*gambar dan tulisan sebelahan*/
+.sidebyside {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebyside .columns{
+  flex: 0 0 auto;
+  width: 55%;
+}
+
+
+.sidebyside .columns.img1{
+  margin-left: auto; /*gambar rata kanan*/
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27vw;
+  height: 26vw;
+  background-image: url('../Images/about_rabbit.png');
+}
+
+.sidebyside .columns.img2{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24vw;
+  height: 32vw;
+  background-image: url('../Images/about_face.png');
+}
+
+.sidebyside .columns.side.vis{
+  margin-left: auto; /*tulisan rata kanan*/
+  margin-right: 0;
+}
+
+/*responsive buat sidebyside gambar tulisan*/
+@media screen and (max-width: 800px) {
+  .sidebyside {
+    flex-flow: row wrap;
+  }
+
+  .sidebyside .columns.img1{
+    display: block;
+    order: 1;
+    background-size: contain;
+    margin: auto;
+  }
+
+  .sidebyside .columns.img2{
+    display: block;
+    order: 1;
+    background-size: contain;
+    margin: auto;
+  }
+
+  .sidebyside .columns.side{
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  /*agar tidak ada jarak vertical align*/
+  .text-container{
+    padding-top: 0;
+  }
+}
+
+
+/*footer*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 6vh;
+  padding-left: 10vw;
+  width:100vw;
+}
+
+.container{
+  display: flex;
+}
+
+footer #brand {
+  flex-grow: 1;
+  flex-basis: 90%;
+  padding-right: 20vw;
+}
+
+footer #explore{
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+
+footer #contact{
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+
+footer #brand h1{
+  font-family: 'Avenir Next LT Pro';
+  font-size: 3vw;
+  font-weight: 400;
+  padding-bottom: 3vh;
+}
+
+footer h1{
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 2.6vw;
+  margin-bottom: 2vh;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 2.6vw;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  padding-bottom: 2vh;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.4vw;
+  transition: 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #76A2CB;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.copyright{
+  padding-bottom: 3vh;
+}

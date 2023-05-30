@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login | Vorskin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Form.css'>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar-container">
+            <div class="header-up">
+                <h3 class="vorskin">VORSKIN</h3>
+                <ul class="account">
+                    <li><a href="../Form/Subscribe.html">Subscribe</a></li>
+                    <li><a href="../Form/Login.html" class="active">Login</a></li>
+                </ul>
+            </div>
+            
+            <nav>
+                <ul class="navbar">
+                    <li><a href="../Home/Home.html"><h5>HOME</h5></a></li>
+                    <li><a href="../Products/Products.html"><h5>PRODUCTS</h5></a></li>
+                    <li><a href="../About/About.html"><h5>ABOUT</h5></a></li>
+                    <li><a href="../Promotions/Promotions.html"><h5>PROMOTIONS</h5></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- no validation, validation in subsribe form -->
+    <section id="login">
+        <div>
+            <h1 class="title-vorskin">VORSKIN</h1>
+
+            <div class="container-content">
+                <div class="title"><img src="../Images/login-logo.png"></div>
+    
+                <form id="loginform" method="POST">
+                    <div class="user-details">
+                        <div class="input-container">
+                            <label for="login-email">Email</label><br>
+                            <input type="text" id="login-email" name="login-email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="login-pwd">Password</label><br>
+                            <input type="password" id="login-pwd" name="login-pwd" required>
+                        </div>
+                        
+                    </div>
+                    <div class="btn">
+                        <input id="loginbtn" type="submit" value="LOGIN">
+                    </div>
+                </form>
+    
+                <p>Not registered yet? <a href="Register.html">Create an account</a></p>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <footer>
+        <section class="container">
+            <div class="brand">
+                <h1>VORSKIN</h1>
+                <p>We create healthy and sustainable Skin-care and Body-care for you.</p>
+                <p class="bold">Be your kind of beauty.</p>
+            </div>
+            <div class="explore">
+                <h1>Explore</h1>
+                    <ul>
+                        <li><a href="../Home/Home.html">Home</a></li>
+                        <li><a href="../About/About.html">About</a></li>
+                        <li><a href="../Products/Products.html">Products</a></li>
+                        <li><a href="../Promotions/Promotions.html">Promotions</a></li>
+                        <li><a href="../Form/Subscribe.html">Subscribe</a></li>
+                    </ul>
+            </div>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <p>hello@vorskin.com</p>
+                <p>9435-6757</p>
+                <br>
+                <h1>Follow</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/skii/?hl=en">Instagram</a></li>
+                    <li><a href="https://twitter.com/skii_id">Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy; 2022 Vorskin. All Rights Reserved</p>
+        </div>
+        
+    </footer>
+   
+</body>
+</html>

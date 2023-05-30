@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vorskin | Subscribe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Form.css'>
+    <script src='Form.js'></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar-container">
+            <div class="header-up">
+                <h3 class="vorskin">VORSKIN</h3>
+                <ul class="account">
+                    <li><a href="../Form/Subscribe.html" class="active">Subscribe</a></li>
+                    <li><a href="../Form/Login.html">Login</a></li>
+                </ul>
+            </div>
+            
+            <nav>
+                <ul class="navbar">
+                    <li><a href="../Home/Home.html"><h5>HOME</h5></a></li>
+                    <li><a href="../Products/Products.html"><h5>PRODUCTS</h5></a></li>
+                    <li><a href="../About/About.html"><h5>ABOUT</h5></a></li>
+                    <li><a href="../Promotions/Promotions.html"><h5>PROMOTIONS</h5></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="register">
+        <div>
+            <h1 class="title-vorskin">VORSKIN</h1>
+
+            <div class="container-content">
+                <div id="subs-title">
+                    <h3>SUBSCRIPTION</h3>
+                    <p>Already have an Account? <a href="Login.html">Log In</a></p>
+                </div>
+                <form id="subsform" method="POST">
+                    <div class="user-details">
+                        <div class="column">
+                            <div class="input-container">
+                                <label for="fname">First Name</label><br>
+                                <p id="errorFirstName" class="error"></p>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-container">
+                                <label for="lname">Last Name</label><br>
+                                <p id="errorLastName" class="error"></p>
+                                <input type="text" id="lname" name="lname">
+                            </div>
+                        </div>
+                        <div class="address-column">
+                            <div class="input-container">
+                                <label for="address">Address</label><br>
+                                <p id="errorAddress" class="error"></p>
+                                <input type="text" id="address" name="address">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-container">
+                                <label for="phone">Phone Number</label><br>
+                                <p id="errorPhone" class="error"></p>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-container">
+                                <label for="email">Email</label><br>
+                                <p id="errorEmail" class="error"></p>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-container">
+                                <label for="pwd">Password</label><br>
+                                <p id="errorPassword" class="error"></p>
+                                <input type="password" id="pwd" name="pwd">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-container">
+                                <label for="cpwd">Confirm Password</label><br>
+                                <p id="errorConfirmPassword" class="error"></p>
+                                <input type="password" id="cpwd" name="cpwd">
+                            </div>
+                        </div>
+                        
+                        <div class="tick-container">
+                            <h5>Preference</h5>
+                            <p id="errorPreference" class="error"></p>
+                            <div class="radio-option">
+                                <input type="radio" id="skin" name="preference" value="Skin-care">
+                                <label for="skin">Skin-care</label> <br>
+                                <input type="radio" id="body" name="preference" value="Body-care">
+                                <label for="body">Body-care</label>
+                            </div>
+                        </div>
+                        <div class="tick-container">
+                            <h5>*VORSKIN News Subscribe</h5>
+                            <p>Please check the relevant options below if you agree to receive the following marketing materials:</p>
+                            <p id="errorNews" class="error"></p>
+                            <div class="radio-option">
+                                <input type="radio" id="receive" name="news" value="yes">
+                                <label for="receive">I would like to receive information about goods and services.</label> <br>
+                                <input type="radio" id="notreceive" name="news" value="no">
+                                <label for="notreceive">I do not wish to receive any news or information.</label>
+                            </div>
+                        </div>
+                        <div class="tick-container">
+                            <h5>*Recognition and Approval</h5>
+                            <p>I acknowledge that I have read and understand the Personal Data Protection Policy and agree to the collection and use of my personal data for the purposes set out in the Policy.</p>
+                            <p id="errorTerms" class="error"></p>
+                            <div class="radio-option">
+                                <input type="checkbox" id="terms" name="terms" value="yes">
+                                <label for="terms">I hereby consent to the processing of my Personal Data for the above purposes and receive emails from VORSKIN.</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="SUBSCRIBE">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <footer>
+        <section class="container">
+            <div class="brand">
+                <h1>VORSKIN</h1>
+                <p>We create healthy and sustainable Skin-care and Body-care for you.</p>
+                <p class="bold">Be your kind of beauty.</p>
+            </div>
+            <div class="explore">
+                <h1>Explore</h1>
+                    <ul>
+                        <li><a href="../Home/Home.html">Home</a></li>
+                        <li><a href="../About/About.html">About</a></li>
+                        <li><a href="../Products/Products.html">Products</a></li>
+                        <li><a href="../Promotions/Promotions.html">Promotions</a></li>
+                        <li><a href="../Form/Subscribe.html">Subscribe</a></li>
+                    </ul>
+            </div>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <p>hello@vorskin.com</p>
+                <p>9435-6757</p>
+                <br>
+                <h1>Follow</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/skii/?hl=en">Instagram</a></li>
+                    <li><a href="https://twitter.com/skii_id">Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy; 2022 Vorskin. All Rights Reserved</p>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
